@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasso & Baba - Our Anniversary</title>
+    <title>Sasso & Baba - Anniversary Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home-page">
+    <!-- Redirect Check -->
+    <script>
+        // Check if user has access
+        const session = localStorage.getItem('anniversaryAccess');
+        if (!session) {
+            window.location.href = 'password.html';
+        }
+    </script>
+
     <!-- Audio Player -->
     <audio id="backgroundMusic" loop>
         <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
@@ -26,29 +35,95 @@
             <div class="heart heart5">♥</div>
         </div>
 
-        <!-- Main Content -->
-        <div class="content">
-            <div class="names-section">
-                <h1 class="names">Sasso <span class="and">&</span> Baba</h1>
-                <div class="heart-divider">❤️</div>
-            </div>
-
-            <div class="message-section">
-                <p class="tagline">"The beginning of a story that continues until the end of life"</p>
-                <p class="subtitle">بداية حكاية مستمرة لآخر العمر</p>
-            </div>
-
-            <div class="counter-section">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Sasso & Baba</h1>
+                <p class="hero-subtitle">Our Beautiful Love Story</p>
                 <div class="counter">
-                    <div id="days" class="counter-number">0</div>
-                    <div class="counter-label">Days Together</div>
+                    <div class="counter-item">
+                        <span class="counter-value">August 22, 2025</span>
+                        <span class="counter-label">When It Started</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="memories.html" class="btn btn-primary">
+                        <span>Our Memories</span>
+                        <span class="icon">📸</span>
+                    </a>
+                    <button class="btn btn-secondary" onclick="scrollToMessage()">
+                        <span>Read Our Story</span>
+                        <span class="icon">💕</span>
+                    </button>
                 </div>
             </div>
+            <div class="hero-decoration">
+                <div class="decoration-heart">♥</div>
+            </div>
+        </div>
 
-            <button class="btn-memories" onclick="window.location.href='memories.html'">
-                Our Memories
-                <span class="arrow">→</span>
-            </button>
+        <!-- Main Message Section -->
+        <div class="message-section">
+            <div class="message-card" id="mainMessage">
+                <div class="message-header">
+                    <h2>To My Love</h2>
+                    <div class="header-decoration">✨ 💕 ✨</div>
+                </div>
+                
+                <div class="message-content">
+                    <p class="greeting">Dear Baba,</p>
+                    
+                    <p>Every day with you is a blessing I never knew I needed. From the moment our story began on August 22nd, you became my reason to smile, my reason to believe in love, and my reason to dream bigger.</p>
+                    
+                    <p>We share the same birthday - the 13th of November - and I can't help but believe this is destiny telling us we were meant to find each other. You are my best friend, my partner in crime, and my forever love.</p>
+                    
+                    <p>Through every laugh, every tear, and every adventure, I'm grateful to walk this beautiful journey with you. You make me believe in soulmates.</p>
+                    
+                    <p>Here's to many more years of memories, of love, and of you and me against the world.</p>
+                    
+                    <p class="closing">Forever yours,<br><span class="signature">Sasso</span></p>
+                </div>
+                
+                <div class="message-footer">
+                    <p>❤️ With All My Love ❤️</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="timeline-section">
+            <h2>Our Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>August 22, 2025</h3>
+                        <p>The day our beautiful story began ✨</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Every Day Since</h3>
+                        <p>Filled with love, laughter, and countless precious moments</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Forever & Always</h3>
+                        <p>Our story continues until the end of life 💕</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation to Memories -->
+        <div class="memories-link">
+            <a href="memories.html" class="btn btn-large">
+                <span class="btn-text">View Our Beautiful Memories</span>
+                <span class="btn-icon">→</span>
+            </a>
         </div>
     </div>
 
