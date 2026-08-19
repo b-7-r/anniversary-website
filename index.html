@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasso & Baba - Our Anniversary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Audio Player -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    
+    <button id="musicToggle" class="music-toggle" title="Toggle Music">
+        <span class="music-icon">🔊</span>
+    </button>
+
+    <div class="container">
+        <!-- Animated Background -->
+        <div class="background">
+            <div class="heart heart1">♥</div>
+            <div class="heart heart2">♥</div>
+            <div class="heart heart3">♥</div>
+            <div class="heart heart4">♥</div>
+            <div class="heart heart5">♥</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="names-section">
+                <h1 class="names">Sasso <span class="and">&</span> Baba</h1>
+                <div class="heart-divider">❤️</div>
+            </div>
+
+            <div class="message-section">
+                <p class="tagline">"The beginning of a story that continues until the end of life"</p>
+                <p class="subtitle">بداية حكاية مستمرة لآخر العمر</p>
+            </div>
+
+            <div class="counter-section">
+                <div class="counter">
+                    <div id="days" class="counter-number">0</div>
+                    <div class="counter-label">Days Together</div>
+                </div>
+            </div>
+
+            <button class="btn-memories" onclick="window.location.href='memories.html'">
+                Our Memories
+                <span class="arrow">→</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

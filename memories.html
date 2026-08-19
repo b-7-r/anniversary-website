@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories - Sasso & Baba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="memories-page">
+    <!-- Audio Player -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    
+    <button id="musicToggle" class="music-toggle" title="Toggle Music">
+        <span class="music-icon">🔊</span>
+    </button>
+
+    <div class="container">
+        <!-- Animated Background -->
+        <div class="background">
+            <div class="heart heart1">♥</div>
+            <div class="heart heart2">♥</div>
+            <div class="heart heart3">♥</div>
+            <div class="heart heart4">♥</div>
+            <div class="heart heart5">♥</div>
+        </div>
+
+        <!-- Header -->
+        <div class="memories-header">
+            <button class="btn-back" onclick="window.location.href='index.html'">
+                <span class="arrow">←</span> Back
+            </button>
+            <h1>Our Beautiful Memories</h1>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gallery-section">
+            <div class="gallery">
+                <!-- Memory Card 1 -->
+                <div class="memory-card">
+                    <div class="memory-image placeholder-1"></div>
+                    <div class="memory-info">
+                        <h3>Our Beginning</h3>
+                        <p>Where it all started... the most beautiful moment of my life.</p>
+                    </div>
+                </div>
+
+                <!-- Memory Card 2 -->
+                <div class="memory-card">
+                    <div class="memory-image placeholder-2"></div>
+                    <div class="memory-info">
+                        <h3>Special Moments</h3>
+                        <p>Every moment with you feels like a dream come true.</p>
+                    </div>
+                </div>
+
+                <!-- Memory Card 3 -->
+                <div class="memory-card">
+                    <div class="memory-image placeholder-3"></div>
+                    <div class="memory-info">
+                        <h3>Forever With You</h3>
+                        <p>Promising a lifetime of happiness and love together.</p>
+                    </div>
+                </div>
+
+                <!-- Memory Card 4 -->
+                <div class="memory-card">
+                    <div class="memory-image placeholder-4"></div>
+                    <div class="memory-info">
+                        <h3>Always & Forever</h3>
+                        <p>Our love story is just the beginning of something beautiful.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Love Message Section -->
+        <div class="love-message-section">
+            <div class="message-box">
+                <h2>A Message to My Love</h2>
+                <p>Dear Baba,</p>
+                <p>Every day with you is a blessing I never knew I needed. From the moment our story began, you became my reason to smile, my reason to believe in love, and my reason to dream bigger.</p>
+                <p>Thank you for being my best friend, my partner, and my forever. Through every laugh, every tear, and every adventure, I'm grateful to walk this journey with you.</p>
+                <p>Here's to many more years of memories, of love, and of you and me against the world.</p>
+                <p class="signature">Forever yours,<br>Sasso ❤️</p>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="timeline-section">
+            <h2>Our Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>August 22, 2025</h3>
+                        <p>The day our beautiful story began ✨</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Every Day Since</h3>
+                        <p>Filled with love, laughter, and countless precious moments</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Forever & Always</h3>
+                        <p>Our story continues until the end of life 💕</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
