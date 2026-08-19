@@ -32,70 +32,127 @@
                 <span class="arrow">←</span> Back
             </button>
             <h1>Our Beautiful Memories</h1>
+            <p class="header-subtitle">Every moment with you is a treasure</p>
         </div>
 
-        <!-- Gallery Section -->
+        <!-- Premium Gallery Section -->
         <div class="gallery-section">
-            <div class="gallery">
-                <!-- Memory Card 1 -->
-                <div class="memory-card">
-                    <div class="memory-image placeholder-1"></div>
-                    <div class="memory-info">
-                        <h3>Our Beginning</h3>
-                        <p>Where it all started... the most beautiful moment of my life.</p>
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <!-- Memory 1 -->
+                    <div class="gallery-item gallery-item-large" data-index="0">
+                        <div class="gallery-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=500&h=500&fit=crop" alt="Our Beginning" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Our Beginning</h3>
+                                <p>Where it all started</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Memory Card 2 -->
-                <div class="memory-card">
-                    <div class="memory-image placeholder-2"></div>
-                    <div class="memory-info">
-                        <h3>Special Moments</h3>
-                        <p>Every moment with you feels like a dream come true.</p>
+                    <!-- Memory 2 -->
+                    <div class="gallery-item" data-index="1">
+                        <div class="gallery-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&h=500&fit=crop" alt="Special Moments" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Special Moments</h3>
+                                <p>Just us two</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Memory Card 3 -->
-                <div class="memory-card">
-                    <div class="memory-image placeholder-3"></div>
-                    <div class="memory-info">
-                        <h3>Forever With You</h3>
-                        <p>Promising a lifetime of happiness and love together.</p>
+                    <!-- Memory 3 -->
+                    <div class="gallery-item" data-index="2">
+                        <div class="gallery-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1515895917318-93d78e4b311b?w=500&h=500&fit=crop" alt="Forever With You" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Forever With You</h3>
+                                <p>Promising forever</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Memory Card 4 -->
-                <div class="memory-card">
-                    <div class="memory-image placeholder-4"></div>
-                    <div class="memory-info">
-                        <h3>Always & Forever</h3>
-                        <p>Our love story is just the beginning of something beautiful.</p>
+                    <!-- Memory 4 -->
+                    <div class="gallery-item gallery-item-large" data-index="3">
+                        <div class="gallery-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1506008587538-3149f45148fa?w=500&h=500&fit=crop" alt="Always & Forever" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Always & Forever</h3>
+                                <p>Our love story</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Memory 5 -->
+                    <div class="gallery-item" data-index="4">
+                        <div class="gallery-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=500&fit=crop" alt="Smile Together" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Smile Together</h3>
+                                <p>Your smile makes me happy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Memory 6 -->
+                    <div class="gallery-item" data-index="5">
+                        <div class="gallery-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1523438097914-512b08d60908?w=500&h=500&fit=crop" alt="Perfect Day" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Perfect Day</h3>
+                                <p>With you is perfect</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Memory 7 -->
+                    <div class="gallery-item" data-index="6">
+                        <div class="gallery-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1543260521-e149267dd56d?w=500&h=500&fit=crop" alt="Our Love" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <h3>Our Love</h3>
+                                <p>Forever & Always</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-content">
+                <button class="lightbox-close">&times;</button>
+                <button class="lightbox-prev">❮</button>
+                <img id="lightbox-image" src="" alt="" class="lightbox-image">
+                <button class="lightbox-next">❯</button>
+                <div class="lightbox-caption"></div>
             </div>
         </div>
 
         <!-- Love Message Section -->
         <div class="love-message-section">
             <div class="message-box">
+                <div class="message-decoration">✨</div>
                 <h2>A Message to My Love</h2>
                 <p>Dear Baba,</p>
                 <p>Every day with you is a blessing I never knew I needed. From the moment our story began, you became my reason to smile, my reason to believe in love, and my reason to dream bigger.</p>
                 <p>Thank you for being my best friend, my partner, and my forever. Through every laugh, every tear, and every adventure, I'm grateful to walk this journey with you.</p>
                 <p>Here's to many more years of memories, of love, and of you and me against the world.</p>
-                <p class="signature">Forever yours,<br>Sasso ❤️</p>
+                <p class="signature">Forever yours,<br><span class="signature-name">Sasso</span> ❤️</p>
+                <div class="message-decoration">✨</div>
             </div>
         </div>
 
         <!-- Timeline Section -->
         <div class="timeline-section">
-            <h2>Our Timeline</h2>
+            <h2>Our Journey</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>August 22, 2025</h3>
-                        <p>The day our beautiful story began ✨</p>
+                        <p>The day our beautiful story began 🎂</p>
                     </div>
                 </div>
                 <div class="timeline-item">
